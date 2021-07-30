@@ -1,0 +1,41 @@
+.cards{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-items: center;
+    grid-gap: 25px;
+    padding: 20px;
+}
+
+
+/* for 770px to 1000px */
+@media only screen and (min-width:769.2px) and (max-width:1000px) {
+    .cards{
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+
+/* for mobile screen */
+@media only screen and (max-width: 769px) {
+    .cards{
+        grid-template-columns: 2fr;
+    }
+}
+
+
+
+/* CovidCasesCard Style */
+.card-style{
+    /* backgroundColor: `${props.color}`, */
+    min-width: 300px;
+    min-height: 120px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+.card-style:hover{
+    transform: scale(1.05);
+}
